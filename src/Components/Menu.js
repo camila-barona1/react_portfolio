@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import GitHub from "@material-ui/icons/GitHub";
-import Pinterest from "@material-ui/icons/Pinterest";
-import { LanguageOutlined } from "@material-ui/icons";
 import LanguageIcon from "@material-ui/icons/Language";
 
 function Menu({ menuItem }) {
@@ -16,12 +14,12 @@ function Menu({ menuItem }) {
                 <img src={item.image} alt="" />
                 <ul>
                   <li>
-                    <a href={item.link1} target="_blank">
+                    <a href={item.link1} target="_blank" rel="noreferrer">
                       <GitHub />
                     </a>
                   </li>
                   <li>
-                    <a href={item.link2} target="_blank">
+                    <a href={item.link2} target="_blank" rel="noreferrer">
                       <LanguageIcon />
                     </a>
                   </li>

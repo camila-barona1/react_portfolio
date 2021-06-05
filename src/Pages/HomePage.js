@@ -22,6 +22,7 @@ function HomePage() {
           <a
             href="https://www.linkedin.com/in/maria-camila-321a091ab/"
             target="_blank"
+            rel="noreferrer"
             className="icon i-facebook"
           >
             <LinkedIn />
@@ -29,6 +30,7 @@ function HomePage() {
           <a
             href="https://github.com/camila-barona1"
             target="_blank"
+            rel="noreferrer"
             className="icon i-github"
           >
             <GithubIcon />
@@ -36,6 +38,7 @@ function HomePage() {
           <a
             href="mailto:camilabarona1@gmail.com"
             target="_blank"
+            rel="noreferrer"
             className="icon i-youtube"
           >
             <MailOutline />

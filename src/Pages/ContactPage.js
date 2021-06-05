@@ -21,7 +21,7 @@ function ContactPage() {
   const [email_contac, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
-
+  const [isSuccessfullySubmitted, setIsSuccessfullySubmitted] = useState(false);
   function onSubmit(e) {
     e.preventDefault();
 
@@ -40,8 +40,9 @@ function ContactPage() {
         setEmail("");
         setSubject("");
         setMessage("");
+        setIsSuccessfullySubmitted(true);
       });
-    alert("Thanks for leaving a msg");
+    // alert("Thanks for leaving a msg");
   }
   return (
     <MainLayout>
@@ -59,6 +60,7 @@ function ContactPage() {
                   type="text"
                   value={name_contac}
                   onChange={(e) => setName(e.currentTarget.value)}
+                  required
                 />
               </div>
               <div className="form-field">
@@ -67,6 +69,7 @@ function ContactPage() {
                   type="email"
                   value={email_contac}
                   onChange={(e) => setEmail(e.currentTarget.value)}
+                  required
                 />
               </div>
               <div className="form-field">
@@ -75,6 +78,7 @@ function ContactPage() {
                   type="text"
                   value={subject}
                   onChange={(e) => setSubject(e.currentTarget.value)}
+                  required
                 />
               </div>
               <div className="form-field">
@@ -85,6 +89,7 @@ function ContactPage() {
                   onChange={(e) => setMessage(e.currentTarget.value)}
                   cols="30"
                   rows="10"
+                  required
                 ></textarea>
               </div>
               <div className="form-field f-button">
@@ -92,6 +97,9 @@ function ContactPage() {
                   <PrimaryButton title={"Send Email"} />
                 </button>
               </div>
+              {isSuccessfullySubmitted && (
+                <div className="success">Form submitted successfully</div>
+              )}
             </form>
           </div>
           <div className="right-content">

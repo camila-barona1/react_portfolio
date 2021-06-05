@@ -35,7 +35,12 @@ function ImageSection() {
             <p>: Jr Developer</p>
           </div>
         </div>
-        <PrimaryButton title={"Download CV"} link={MyPDF} target="_blank" />
+        <PrimaryButton
+          title={"Download CV"}
+          link={MyPDF}
+          target="_blank"
+          rel="noreferrer"
+        />
       </div>
     </ImageSectionStyled>
   );

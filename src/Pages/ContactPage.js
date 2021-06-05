@@ -41,6 +41,7 @@ function ContactPage() {
         setSubject("");
         setMessage("");
       });
+    alert("Thanks for leaving a msg");
   }
   return (
     <MainLayout>

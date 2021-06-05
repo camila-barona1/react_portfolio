@@ -23,7 +23,6 @@ function ImageSection() {
           <div className="info-title">
             <p>Full Name</p>
             <p>Age</p>
-            <p>Nationality </p>
             <p>Languages </p>
             <p>Location</p>
             <p>Service</p>
@@ -31,15 +30,12 @@ function ImageSection() {
           <div className="info">
             <p>: Maria Camila Barona</p>
             <p>: 19</p>
-            <p>: Spainsh </p>
             <p>: Spanish, English </p>
             <p>: Cali, Colombia</p>
             <p>: Jr Developer</p>
           </div>
         </div>
-        <a href={MyPDF} target="_blank">
-          <PrimaryButton title={"Download CV"} />
-        </a>
+        <PrimaryButton title={"Download CV"} link={MyPDF} target="_blank" />
       </div>
     </ImageSectionStyled>
   );

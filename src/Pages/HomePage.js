@@ -12,7 +12,7 @@ function HomePage() {
       </div>
       <div className="typography">
         <h1>
-          Hi all, I'm <span>Maria C</span>
+          Hi all, I'm <span>Maria</span>
         </h1>
         <p>
           A passionate Junior Software Developer 🌟 Learning JavaScript /

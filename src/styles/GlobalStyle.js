@@ -167,8 +167,7 @@ h6{
     }
   }
 
-
-//Global Media Queries
+// Global Media Queries
 
 
 

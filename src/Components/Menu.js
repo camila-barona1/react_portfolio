@@ -2,10 +2,21 @@ import React from "react";
 import styled from "styled-components";
 import GitHub from "@material-ui/icons/GitHub";
 import LanguageIcon from "@material-ui/icons/Language";
+import { RemoveRedEyeSharp } from "@material-ui/icons";
+import { useState } from "react";
+import Modal from "./Modal";
 
 function Menu({ menuItem }) {
+  const [showModal, setShowModal] = useState(false);
+
+  const openModal = (e) => {
+    e.preventDefault();
+    setShowModal((prev) => !prev);
+    // alert("hi");
+  };
   return (
     <MenuItemStyled>
+      <Modal showModal={showModal} setShowModal={setShowModal} />
       {menuItem.map((item) => {
         return (
           <div className="grid-item" key={item.id}>
@@ -23,8 +34,14 @@ function Menu({ menuItem }) {
                       <LanguageIcon />
                     </a>
                   </li>
+                  <li id="eye-sight">
+                    <a onClick={openModal} href="/#">
+                      <RemoveRedEyeSharp />
+                    </a>
+                  </li>
                 </ul>
               </div>
+
               <h6>{item.title}</h6>
               <p>{item.text}</p>
             </div>
@@ -39,11 +56,17 @@ const MenuItemStyled = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
+
   @media screen and (max-width: 920px) {
     grid-template-columns: repeat(2, 1fr);
   }
   @media screen and (max-width: 670px) {
     grid-template-columns: repeat(1, 1fr);
+  }
+  @media screen and (max-width: 920px) {
+    #eye-sight {
+      display: none;
+    }
   }
   .grid-item {
     .portfolio-content {

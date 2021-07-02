@@ -4,6 +4,7 @@ import img3 from "../img/portImages/infuvalle.png";
 import img4 from "../img/portImages/localhost_systema_pos_.png";
 import img5 from "../img/portImages/youtubeclone.png";
 import img6 from "../img/portImages/MBLearning.png";
+import img7 from "../img/portImages/pokedex.png";
 
 const portfolios = [
   {
@@ -59,6 +60,15 @@ const portfolios = [
     link2: "https://github.com/camila-barona1/MB-Learning",
     title: "MB-Learning",
     text: "Course platform, with admin panel and Learning panel for students [PHP, CSS, JS]",
+  },
+  {
+    id: 7,
+    category: "JavaScript",
+    image: img7,
+    link1: "https://github.com/camila-barona1/pokedex",
+    link2: "https://pokedex-pik.netlify.app/",
+    title: "Pokedex",
+    text: "Pokedex build with JavaScript and fecthing data from the pokeapi",
   },
 ];
 

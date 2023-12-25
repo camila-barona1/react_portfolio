@@ -29,7 +29,7 @@ function ImageSection() {
           </div>
           <div className="info">
             <p>: Maria Camila</p>
-            <p>: 19</p>
+            <p>: 20</p>
             <p>: Spanish, English </p>
             <p>: Cali, Colombia</p>
             <p>: Jr Developer</p>

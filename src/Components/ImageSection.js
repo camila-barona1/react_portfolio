@@ -12,7 +12,7 @@ function ImageSection() {
       </div>
       <div className="right-content">
         <h4>
-          I am <span>Maria Camila</span>
+          I am <span>Maria</span>
         </h4>
         <p className="paragraph">
           Jr Software Developer who is working to improve her skills through
@@ -29,7 +29,7 @@ function ImageSection() {
           </div>
           <div className="info">
             <p>: Maria Camila</p>
-            <p>: 20</p>
+            <p>: 22</p>
             <p>: Spanish, English </p>
             <p>: Cali, Colombia</p>
             <p>: Jr Developer</p>
